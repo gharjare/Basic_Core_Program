@@ -5,17 +5,21 @@
         public static void Main(string[] args)
         {
             Console.WriteLine("Welcome to basic core program");
+            Console.WriteLine("Enter the number");
+            int number = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Enter the proper year");
-            int year = Convert.ToInt32(Console.ReadLine());
-            if(year%4==0) 
+            if (number >= 0 && number <= 31)
             {
-                Console.WriteLine("Year is leap");
+                for (int i = 0; i < number; i++)
+                {
+                    Console.WriteLine(Math.Pow(i, 2));
+                }
             }
             else
             {
-                Console.WriteLine("Not leap Year");
+                Console.WriteLine("Enter the number betwwen 2 to 31");
             }
+
         }
     }
     
