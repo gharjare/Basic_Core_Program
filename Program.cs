@@ -5,12 +5,16 @@
         public static void Main(string[] args)
         {
             Console.WriteLine("Welcome to basic core program");
-            int a = 10, b = 20, temp;
-            Console.WriteLine("Before swapping value of a={0},b={1}", a, b);
-            temp = a;
-            a = b;
-            b = temp;
-            Console.WriteLine("After the swapping value of a={0},b={1}", a, b);
+            Console.WriteLine("Enter the number");
+            int num = Convert.ToInt32(Console.ReadLine());
+            if (num%2==0)
+            {
+                Console.WriteLine("Number is even");
+            }
+            else
+            {
+                Console.WriteLine("Number is odd");
+            }
         }
     }
     
