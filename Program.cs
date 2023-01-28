@@ -5,17 +5,16 @@
         public static void Main(string[] args)
         {
             Console.WriteLine("Welcome to basic core program");
-            double sum = 0.0;
-            Console.WriteLine("\n\n");
-            Console.WriteLine("Calculate the sum of harmonic series");
-            Console.WriteLine("Enter the value of n");
+            int fact = 1;
+
+            Console.WriteLine("Enter the number");
             int num = Convert.ToInt32(Console.ReadLine());
-            for (int i = 0; i < num; i++)
+
+            for (int i = 1; i <= num; i++)
             {
-                Console.WriteLine("1/{0}+", i);
-                sum += 1 / (float)i;
+                fact = fact * i;
             }
-            Console.WriteLine("\nsum of series of {0} terms: {1} \n", num, sum);
+            Console.WriteLine("Factorial of" + num + "is" + fact);
 
 
         }
