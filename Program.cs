@@ -5,15 +5,15 @@
         public static void Main(string[] args)
         {
             Console.WriteLine("Welcome to basic core program");
-            Console.WriteLine("Enter the number");
-            int num = Convert.ToInt32(Console.ReadLine());
-            if (num%2==0)
+            Console.WriteLine("Enter the any character");
+            char ch = Convert.ToChar(Console.ReadLine());
+            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')
             {
-                Console.WriteLine("Number is even");
+                Console.WriteLine(ch + "is vowel");
             }
             else
             {
-                Console.WriteLine("Number is odd");
+                Console.WriteLine(ch + "is consonant ");
             }
         }
     }
